@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #ffe0e9,
+        #fff5f7,
+        #ffd6e0
+    );
+
+    color: #4a2630;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.heart {
+    font-size: 70px;
+    animation: heartbeat 1.5s infinite;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 15px;
+    color: #c2185b;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #7a4a55;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 35px;
+    margin: 45px auto;
+    border-radius: 20px;
+
+    max-width: 650px;
+
+    box-shadow: 0 10px 30px rgba(150, 50, 80, 0.15);
+}
+
+.card h2 {
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.card p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.quote {
+    margin-top: 25px;
+    padding: 15px;
+
+    background: #ffe5ed;
+    border-radius: 12px;
+
+    color: #c2185b;
+    font-style: italic;
+}
+
+.memories {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.memories div {
+    background: white;
+    width: 250px;
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(150, 50, 80, 0.1);
+
+    transition: 0.3s;
+}
+
+.memories div:hover {
+    transform: translateY(-8px);
+}
+
+.memories span {
+    font-size: 35px;
+}
+
+.memories h3 {
+    margin: 15px 0 10px;
+    color: #c2185b;
+}
+
+.memories p {
+    line-height: 1.5;
+    color: #6d4c55;
+}
+
+footer {
+    margin-top: 50px;
+    color: #8a5965;
+}
+
+/* Heart animation */
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.15);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
